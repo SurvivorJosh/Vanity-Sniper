@@ -93,13 +93,13 @@ class Sniper:
                 
             elif res.status_code == 200:
                 logging.info(f"VANITY TAKEN : https://discord.gg/{van_code} still not available. Still trying")
-                time.sleep(1.3)
+                time.sleep(0.1)
                 self.sniper()
                 
             elif res.status_code == 429:
-                logging.info(f"RATELIMITED : You sent way too many requests suffering from ratelimits")
-                b = res.json()
-                time.sleep(0.6)
+               
+               
+                time.sleep(0.3)
                 self.sniper()
                 
             else:
